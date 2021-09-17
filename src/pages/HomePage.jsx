@@ -17,10 +17,10 @@ const HomePage = (props) => {
         <div className="container">
             {shipments !== null ? 
                 <>
-                    <div className="flex flex-3">
+                    <div className="flex sidebar">
                         <Sidebar selectShipment={handleSelectShipment} shipments={shipments} />
                     </div>
-                    <div className="flex flex-8">
+                    <div className="flex shipment">
                         <Route path="/shipment">
                             <ShipmentDetail 
                                 changeBoxes={props.changeBoxes} shipmentSelected={shipmentSelected}/>

@@ -64,11 +64,11 @@ a {
 .flex{
     margin: 0 20px 0 0;
 }
-.flex-3 {
+.sidebar {
     flex: 3;
 }
 
-.flex-8 {
+.shipment {
     flex: 8;
 }
 
@@ -109,8 +109,15 @@ a {
 .card__item {
     margin-top: 40px;
 }
+.card__item input {
+    min-width: 240px;
+    padding: 5px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid #EBEBEB;
+}
 .card__label {
-    margin-top: 40px;
+    margin: 40px 0 10px 0;
 }
 .card__box {
     margin-top: 5px;
@@ -167,5 +174,24 @@ a {
     }
     .container {
         margin: 0 10px;
+    }
+}
+
+@media (max-width: 512px) {
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .sidebar {
+        flex: 12;
+    }
+    
+    .shipment {
+        flex: 12;
+        margin-top: 20px;
+    }
+    .list {
+        height: 150px;
     }
 }
