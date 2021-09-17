@@ -14,6 +14,7 @@ function App() {
 
   const handleLoadShipments = () => {
     setShipments(shipmentsLocal)
+    setShipmentsFiltred(shipmentsLocal)
     localStorage.setItem('shipments', JSON.stringify(shipmentsLocal))
   }
 

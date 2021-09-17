@@ -5,9 +5,6 @@ const Alert = (props) => {
     
     const hideAlert = () => {
         setShowAlert(false)
-        setTimeout(() => {
-            props.hideAlert()
-        }, 2000);
     }
     return (
         <div className="alert__wrap">
